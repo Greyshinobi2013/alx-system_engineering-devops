@@ -1,4 +1,2 @@
 #!/usr/bin/env bash
-echo -e "2"
-echo -e "2"
-
+echo -e "1"
