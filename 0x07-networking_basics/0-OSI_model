@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-echo -e "2\n\n2"
+echo -e "2"
