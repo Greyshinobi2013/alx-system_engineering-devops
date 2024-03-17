@@ -4,3 +4,7 @@ echo "Proto Recv-Q Send-Q Local Address           Foreign Address         State 
 # Display listening ports as well as the PID and program name
 sudo netstat -tunlp | grep 'LISTEN'
 
+echo "Active UNIX domain sockets (only servers)\n
+Proto RefCnt Flags       Type       State         I-Node   PID/Program name    Path"
+sudo netstat  -a | grep "LISTENING"
+
