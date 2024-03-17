@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# Display listening ports as well as the PID and program name
+sudo netstat -tunlp | grep 'LISTEN'
+
