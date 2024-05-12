@@ -6,14 +6,11 @@
 display_message(){
 	echo "To infinity and beyon"
 }
-#function to handle SIGTERM message
-handle_sigterm(){
-	echo "I am invinsible!!!"
-}
-#trap SIGTERM signal
-trap handle_sigterm SIGTERM
+message='I am invisible!!!'
+#trap SIGTERM signai
+trap "echo '${message}'" SIGTERM
 #infinite loop with sleep
-while true
+while true;
 do
 	display_message
 	sleep 2
