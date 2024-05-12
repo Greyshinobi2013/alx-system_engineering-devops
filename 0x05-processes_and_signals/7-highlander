@@ -6,9 +6,9 @@
 display_message(){
 	echo "To infinity and beyon"
 }
-message='I am invisible!!!'
+message="I am invisible!!!"
 #trap SIGTERM signai
-trap "echo '${message}'" SIGTERM
+trap 'echo ${message}' SIGTERM
 #infinite loop with sleep
 while true;
 do
