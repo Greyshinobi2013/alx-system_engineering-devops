@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+#Stop "7-highlander" process with out using kill or killall bash command
+process_id="7-highlander"
+pkill -f  ${process_id}
+

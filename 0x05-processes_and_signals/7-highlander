@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+#Display - To infinity and beyond indefinitely
+#	 - With a sleep 2 in between each iteration
+#	 - I am invincible!!! when receiving a SIGTERM signal
+#function to display message
+display_message(){
+	echo "To infinity and beyon"
+}
+#function to handle SIGTERM
+handle_sigterm(){
+	echo "I am invinsible!!!"
+	pkill 7-highlander
+	exit 0
+}
+#trap SIGTERM signal
+trap handle_sigterm SIGTERM
+#infinite loop with sleep
+while true
+do
+	display_message
+	sleep 2
+done
+
