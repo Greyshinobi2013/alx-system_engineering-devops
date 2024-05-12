@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 #Stop "4-to_infinity_and_beyond" process with out using kill or killall bash command
-process_id=$(pgrep -f "4-to_infinity_and_beyond")
-kill "${process_id}"
+process_id="4-to_infinity_and_beyond"
+pkill -f  ${process_id}
